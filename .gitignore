@@ -1,0 +1,36 @@
+# Ignore generated sample workbooks and outputs
+samples/*.xls*
+samples/*.csv
+
+# Ignore CLI template/configuration artifacts
+*.template.json
+*_template.*
+
+# Ignore generated CSV outputs
+*_cleaned.csv
+combined.csv
+
+# Ignore centralized export directory (if used)
+/outputs/
+
+# Python build/cache artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generated data artifacts
+data/output/**
+!data/output/
+!data/output/sample_messy_clean.xlsx
+data/archive/
+data/quarantine/
+
+# Logs
+*.log
+pipeline.log
